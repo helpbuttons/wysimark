@@ -40,13 +40,14 @@ export const items: MenuItemData[] = [
     hotkey: "mod+i",
     action: (editor) => editor.marksPlugin.toggleItalic(),
   },
-  { icon: Icon.Style, title: "Text Style", more: true, children: styleItems },
+  { icon: Icon.Style, title: "Text Style", more: true, children: styleItems,show: false },
   "divider",
   {
     icon: Icon.BulletList,
     title: "Lists",
     more: true,
     children: listItems,
+    show: false,
   },
   "divider",
   {
@@ -54,6 +55,7 @@ export const items: MenuItemData[] = [
     title: "Table",
     more: true,
     Component: TableDialog,
+    show: false,
   },
   {
     icon: Icon.Blockquote,
@@ -66,6 +68,7 @@ export const items: MenuItemData[] = [
     title: "Code Block",
     more: true,
     children: codeBlockItems,
+    show: false,
   },
   "divider",
   {
